@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "glassdoor",
+  "id": "modern_glass_doors",
   "version": "2.1.0+1.18",
-  "name": "Glass Doors",
+  "name": "Modern Glass Doors",
   "description": "More Prettier Doors",
   "authors": [
     "kyrptonaught",
@@ -13,19 +13,19 @@
     "sources": "https://github.com/kyrptonaught/Glass-Doors"
   },
   "license": "MIT",
-  "icon": "assets/glassdoor/icon.png",
+  "icon": "assets/modern_glass_doors/icon.png",
   "environment": "*",
   "mixins": [
     {
-      "config": "net.kyrptonaught.glassdoor.json"
+      "config": "net.kyrptonaught.modern_glass_doors.json"
     }
   ],
   "entrypoints": {
     "main": [
-      "net.kyrptonaught.glassdoor.GlassDoorMod"
+      "net.kyrptonaught.modern_glass_doors.ModernGlassDoorsMod"
     ],
     "client" : [
-      "net.kyrptonaught.glassdoor.GlassDoorMod"
+      "net.kyrptonaught.modern_glass_doors.ModernGlassDoorsMod"
     ]
   },
   "depends": {

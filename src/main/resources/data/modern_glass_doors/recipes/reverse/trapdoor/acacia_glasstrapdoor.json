@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "result": {
+    "item": "minecraft:acacia_trapdoor",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "item": "modern_glass_doors:acacia_glasstrapdoor"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.kyrptonaught.modern_glass_doors.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinDoorBlock",
+    "MixinTrapDoorBlock",
+    "DefaultedRegistryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

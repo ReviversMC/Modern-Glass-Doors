@@ -1,0 +1,7 @@
+{
+  "parent": "modern_glass_doors:block/trapdoors/templates/template_trapdoor_open",
+  "textures": {
+    "texture": "modern_glass_doors:block/trapdoors/dark_oak_glasstrapdoor",
+    "texture2": "minecraft:block/dark_oak_trapdoor"
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_top",
-  "textures": {
-    "bottom": "modern_glass_doors:block/doors/acacia_door_bottom",
-    "top": "modern_glass_doors:block/doors/acacia_door_top"
-  }
-}

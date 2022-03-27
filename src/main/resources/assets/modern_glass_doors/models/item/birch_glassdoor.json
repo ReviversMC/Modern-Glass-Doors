@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "modern_glass_doors:item/doors/birch_door"
+    "layer0": "modern_glass_doors:items/birch_door"
   }
 }

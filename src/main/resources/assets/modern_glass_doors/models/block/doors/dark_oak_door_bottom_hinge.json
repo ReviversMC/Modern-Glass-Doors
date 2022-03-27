@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_rh",
-  "textures": {
-    "bottom": "modern_glass_doors:block/doors/dark_oak_door_bottom",
-    "top": "modern_glass_doors:block/doors/dark_oak_door_top"
-  }
-}

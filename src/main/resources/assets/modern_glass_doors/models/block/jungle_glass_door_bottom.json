@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "bottom": "modern_glass_doors:block/jungle_glass_door_bottom",
+    "top": "modern_glass_doors:block/jungle_glass_door_top"
+  }
+}

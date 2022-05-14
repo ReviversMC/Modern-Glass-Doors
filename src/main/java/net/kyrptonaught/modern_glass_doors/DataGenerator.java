@@ -15,7 +15,7 @@ public class DataGenerator {
                     if (!file.exists())
                         file.createNewFile();
                     String output = "{\n" +
-                            "  \"parent\": \"modern_glass_doors:block/template/template_trapdoor_" + type + "\",\n" +
+                            "  \"parent\": \"modern_glass_doors:block/template/template_glass_trapdoor_" + type + "\",\n" +
                             "  \"textures\": {\n" +
                             "    \"texture\": \"modern_glass_doors:block/" + wood + "_glass_trapdoor\",\n" +
                             "    \"texture2\": \"minecraft:block/" + wood + "_trapdoor\"\n" +

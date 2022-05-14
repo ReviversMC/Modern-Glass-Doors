@@ -10,39 +10,39 @@ import net.minecraft.client.render.RenderLayer;
 public class ModernGlassDoorsMod implements ModInitializer, ClientModInitializer {
     public static final String MOD_ID = "modern_glass_doors";
 
-    public static BlockGlassDoor oakGlassDoor;
-    public static BlockGlassDoor spruceGlassDoor;
-    public static BlockGlassDoor birchGlassDoor;
-    public static BlockGlassDoor acaciaGlassDoor;
-    public static BlockGlassDoor jungleGlassDoor;
-    public static BlockGlassDoor darkOakGlassDoor;
-    public static BlockGlassDoor ironGlassDoor;
+    public static GlassDoorBlock oakGlassDoor;
+    public static GlassDoorBlock spruceGlassDoor;
+    public static GlassDoorBlock birchGlassDoor;
+    public static GlassDoorBlock acaciaGlassDoor;
+    public static GlassDoorBlock jungleGlassDoor;
+    public static GlassDoorBlock darkOakGlassDoor;
+    public static GlassDoorBlock ironGlassDoor;
 
-    public static BlockGlassTrapDoor oakGlassTrapdoor;
-    public static BlockGlassTrapDoor spruceGlassTrapdoor;
-    public static BlockGlassTrapDoor birchGlassTrapdoor;
-    public static BlockGlassTrapDoor acaciaGlassTrapdoor;
-    public static BlockGlassTrapDoor jungleGlassTrapdoor;
-    public static BlockGlassTrapDoor darkOakGlassTrapdoor;
-    public static BlockGlassTrapDoor ironGlassTrapdoor;
+    public static GlassTrapDoorBlock oakGlassTrapdoor;
+    public static GlassTrapDoorBlock spruceGlassTrapdoor;
+    public static GlassTrapDoorBlock birchGlassTrapdoor;
+    public static GlassTrapDoorBlock acaciaGlassTrapdoor;
+    public static GlassTrapDoorBlock jungleGlassTrapdoor;
+    public static GlassTrapDoorBlock darkOakGlassTrapdoor;
+    public static GlassTrapDoorBlock ironGlassTrapdoor;
 
     @Override
     public void onInitialize() {
-        oakGlassDoor = new BlockGlassDoor(Block.Settings.copy(Blocks.OAK_DOOR), "oak_glass_door");
-        spruceGlassDoor = new BlockGlassDoor(Block.Settings.copy(Blocks.SPRUCE_DOOR), "spruce_glass_door");
-        birchGlassDoor = new BlockGlassDoor(Block.Settings.copy(Blocks.BIRCH_DOOR), "birch_glass_door");
-        acaciaGlassDoor = new BlockGlassDoor(Block.Settings.copy(Blocks.ACACIA_DOOR), "acacia_glass_door");
-        jungleGlassDoor = new BlockGlassDoor(Block.Settings.copy(Blocks.JUNGLE_DOOR), "jungle_glass_door");
-        darkOakGlassDoor = new BlockGlassDoor(Block.Settings.copy(Blocks.DARK_OAK_DOOR), "dark_oak_glass_door");
-        ironGlassDoor = new BlockGlassDoor(Block.Settings.copy(Blocks.IRON_DOOR), "iron_glass_door");
+        oakGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.OAK_DOOR), "oak_glass_door");
+        spruceGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.SPRUCE_DOOR), "spruce_glass_door");
+        birchGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.BIRCH_DOOR), "birch_glass_door");
+        acaciaGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.ACACIA_DOOR), "acacia_glass_door");
+        jungleGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.JUNGLE_DOOR), "jungle_glass_door");
+        darkOakGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.DARK_OAK_DOOR), "dark_oak_glass_door");
+        ironGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.IRON_DOOR), "iron_glass_door");
 
-        oakGlassTrapdoor = new BlockGlassTrapDoor(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "oak_glass_trapdoor");
-        spruceGlassTrapdoor = new BlockGlassTrapDoor(Block.Settings.copy(Blocks.SPRUCE_TRAPDOOR), "spruce_glass_trapdoor");
-        birchGlassTrapdoor = new BlockGlassTrapDoor(Block.Settings.copy(Blocks.BIRCH_TRAPDOOR), "birch_glass_trapdoor");
-        acaciaGlassTrapdoor = new BlockGlassTrapDoor(Block.Settings.copy(Blocks.ACACIA_TRAPDOOR), "acacia_glass_trapdoor");
-        jungleGlassTrapdoor = new BlockGlassTrapDoor(Block.Settings.copy(Blocks.JUNGLE_TRAPDOOR), "jungle_glass_trapdoor");
-        darkOakGlassTrapdoor = new BlockGlassTrapDoor(Block.Settings.copy(Blocks.DARK_OAK_TRAPDOOR), "dark_oak_glass_trapdoor");
-        ironGlassTrapdoor = new BlockGlassTrapDoor(Block.Settings.copy(Blocks.IRON_TRAPDOOR), "iron_glass_trapdoor");
+        oakGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "oak_glass_trapdoor");
+        spruceGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.SPRUCE_TRAPDOOR), "spruce_glass_trapdoor");
+        birchGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.BIRCH_TRAPDOOR), "birch_glass_trapdoor");
+        acaciaGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.ACACIA_TRAPDOOR), "acacia_glass_trapdoor");
+        jungleGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.JUNGLE_TRAPDOOR), "jungle_glass_trapdoor");
+        darkOakGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.DARK_OAK_TRAPDOOR), "dark_oak_glass_trapdoor");
+        ironGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.IRON_TRAPDOOR), "iron_glass_trapdoor");
     }
     @Override
     public void onInitializeClient() {

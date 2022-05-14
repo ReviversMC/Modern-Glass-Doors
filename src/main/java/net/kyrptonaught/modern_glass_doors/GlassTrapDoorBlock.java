@@ -7,10 +7,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class BlockGlassTrapDoor extends TrapdoorBlock {
-    protected BlockGlassTrapDoor(Settings settings, String name) {
+public class GlassTrapDoorBlock extends TrapdoorBlock {
+    protected GlassTrapDoorBlock(Settings settings, String name) {
         super(settings);
         Registry.register(Registry.BLOCK, new Identifier(ModernGlassDoorsMod.MOD_ID, name), this);
-        Registry.register(Registry.ITEM, new Identifier(ModernGlassDoorsMod.MOD_ID, name), new BlockItem(this, new Item.Settings().group(ItemGroup.REDSTONE)));
+        Registry.register(
+                Registry.ITEM, new Identifier(ModernGlassDoorsMod.MOD_ID, name),
+                new BlockItem(this, new Item.Settings().group(ItemGroup.REDSTONE)));
     }
 }

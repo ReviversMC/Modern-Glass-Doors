@@ -1,6 +1,6 @@
 package net.kyrptonaught.modern_glass_doors.mixin;
 
-import net.kyrptonaught.modern_glass_doors.BlockGlassDoor;
+import net.kyrptonaught.modern_glass_doors.GlassDoorBlock;
 import net.kyrptonaught.modern_glass_doors.ModernGlassDoorsMod;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -21,12 +21,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 
 @Mixin(DoorBlock.class)
-public abstract class MixinDoorBlock {
+public abstract class DoorBlockMixin {
 
     @Inject(method = "onUse", at = @At("HEAD"), cancellable = true)
-    private void modern_glass_doors$activate(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> callbackInfoReturnable) {
+    private void modern_glass_doors_turnDoorIntoGlassDoor(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> callbackInfoReturnable) {
         ItemStack heldStack = player.getInventory().getMainHandStack();
-        if (!(state.getBlock() instanceof BlockGlassDoor) && heldStack.getItem() == Items.GLASS_PANE) {
+        if (!(state.getBlock() instanceof GlassDoorBlock) && heldStack.getItem() == Items.GLASS_PANE) {
             if (state.get(DoorBlock.HALF) == DoubleBlockHalf.UPPER) pos = pos.down();
 
             BlockState glassDoorState = ModernGlassDoorsMod.copyState(state);

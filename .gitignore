@@ -1,3 +1,35 @@
+# gradle
+.gradle/
+build/
+out/
+classes/
+
+# eclipse
+*.launch
+
+# idea
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+.settings/
+.vscode/*
+!.vscode/extensions.json
+bin/
+.classpath
+.project
+
+# macos
+*.DS_Store
+
+# fabric
+run/
+
+
+
+
 # Created by https://www.gitignore.io/api/java,gradle,windows,intellij,forgegradle
 # Edit at https://www.gitignore.io/?templates=java,gradle,windows,intellij,forgegradle
 

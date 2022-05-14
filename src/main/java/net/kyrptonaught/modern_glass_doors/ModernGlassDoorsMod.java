@@ -18,13 +18,13 @@ public class ModernGlassDoorsMod implements ModInitializer, ClientModInitializer
     public static GlassDoorBlock darkOakGlassDoor;
     public static GlassDoorBlock ironGlassDoor;
 
-    public static GlassTrapDoorBlock oakGlassTrapdoor;
-    public static GlassTrapDoorBlock spruceGlassTrapdoor;
-    public static GlassTrapDoorBlock birchGlassTrapdoor;
-    public static GlassTrapDoorBlock acaciaGlassTrapdoor;
-    public static GlassTrapDoorBlock jungleGlassTrapdoor;
-    public static GlassTrapDoorBlock darkOakGlassTrapdoor;
-    public static GlassTrapDoorBlock ironGlassTrapdoor;
+    public static GlassTrapdoorBlock oakGlassTrapdoor;
+    public static GlassTrapdoorBlock spruceGlassTrapdoor;
+    public static GlassTrapdoorBlock birchGlassTrapdoor;
+    public static GlassTrapdoorBlock acaciaGlassTrapdoor;
+    public static GlassTrapdoorBlock jungleGlassTrapdoor;
+    public static GlassTrapdoorBlock darkOakGlassTrapdoor;
+    public static GlassTrapdoorBlock ironGlassTrapdoor;
 
     @Override
     public void onInitialize() {
@@ -36,13 +36,13 @@ public class ModernGlassDoorsMod implements ModInitializer, ClientModInitializer
         darkOakGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.DARK_OAK_DOOR), "dark_oak_glass_door");
         ironGlassDoor = new GlassDoorBlock(Block.Settings.copy(Blocks.IRON_DOOR), "iron_glass_door");
 
-        oakGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "oak_glass_trapdoor");
-        spruceGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.SPRUCE_TRAPDOOR), "spruce_glass_trapdoor");
-        birchGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.BIRCH_TRAPDOOR), "birch_glass_trapdoor");
-        acaciaGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.ACACIA_TRAPDOOR), "acacia_glass_trapdoor");
-        jungleGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.JUNGLE_TRAPDOOR), "jungle_glass_trapdoor");
-        darkOakGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.DARK_OAK_TRAPDOOR), "dark_oak_glass_trapdoor");
-        ironGlassTrapdoor = new GlassTrapDoorBlock(Block.Settings.copy(Blocks.IRON_TRAPDOOR), "iron_glass_trapdoor");
+        oakGlassTrapdoor = new GlassTrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR), "oak_glass_trapdoor");
+        spruceGlassTrapdoor = new GlassTrapdoorBlock(Block.Settings.copy(Blocks.SPRUCE_TRAPDOOR), "spruce_glass_trapdoor");
+        birchGlassTrapdoor = new GlassTrapdoorBlock(Block.Settings.copy(Blocks.BIRCH_TRAPDOOR), "birch_glass_trapdoor");
+        acaciaGlassTrapdoor = new GlassTrapdoorBlock(Block.Settings.copy(Blocks.ACACIA_TRAPDOOR), "acacia_glass_trapdoor");
+        jungleGlassTrapdoor = new GlassTrapdoorBlock(Block.Settings.copy(Blocks.JUNGLE_TRAPDOOR), "jungle_glass_trapdoor");
+        darkOakGlassTrapdoor = new GlassTrapdoorBlock(Block.Settings.copy(Blocks.DARK_OAK_TRAPDOOR), "dark_oak_glass_trapdoor");
+        ironGlassTrapdoor = new GlassTrapdoorBlock(Block.Settings.copy(Blocks.IRON_TRAPDOOR), "iron_glass_trapdoor");
     }
     @Override
     public void onInitializeClient() {

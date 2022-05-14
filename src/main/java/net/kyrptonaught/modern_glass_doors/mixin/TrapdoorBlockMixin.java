@@ -1,6 +1,6 @@
 package net.kyrptonaught.modern_glass_doors.mixin;
 
-import net.kyrptonaught.modern_glass_doors.GlassTrapDoorBlock;
+import net.kyrptonaught.modern_glass_doors.GlassTrapdoorBlock;
 import net.kyrptonaught.modern_glass_doors.ModernGlassDoorsMod;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.TrapdoorBlock;
@@ -24,7 +24,7 @@ public abstract class TrapdoorBlockMixin {
     @Inject(method = "onUse", at = @At("HEAD"), cancellable = true)
     private void modern_glass_doors_turnTrapdoorIntoGlassTrapdoor(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> callbackInfoReturnable) {
         ItemStack heldStack = player.getInventory().getMainHandStack();
-        if (!(state.getBlock() instanceof GlassTrapDoorBlock) && heldStack.getItem() == Items.GLASS_PANE) {
+        if (!(state.getBlock() instanceof GlassTrapdoorBlock) && heldStack.getItem() == Items.GLASS_PANE) {
 
             BlockState glassDoorState = ModernGlassDoorsMod.copyTrapdoorState(state);
             world.setBlockState(pos, glassDoorState);

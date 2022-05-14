@@ -7,8 +7,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class GlassTrapDoorBlock extends TrapdoorBlock {
-    protected GlassTrapDoorBlock(Settings settings, String name) {
+public class GlassTrapdoorBlock extends TrapdoorBlock {
+    protected GlassTrapdoorBlock(Settings settings, String name) {
         super(settings);
         Registry.register(Registry.BLOCK, new Identifier(ModernGlassDoorsMod.MOD_ID, name), this);
         Registry.register(

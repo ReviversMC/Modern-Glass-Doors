@@ -9,13 +9,13 @@
           "conditions": [
             {
               "condition": "minecraft:block_state_property",
-              "block": "modern_glass_doors:jungle_glassdoor",
+              "block": "modern_glass_doors:jungle_glass_door",
               "properties": {
                 "half": "lower"
               }
             }
           ],
-          "name": "modern_glass_doors:jungle_glassdoor"
+          "name": "modern_glass_doors:jungle_glass_door"
         }
       ],
       "conditions": [

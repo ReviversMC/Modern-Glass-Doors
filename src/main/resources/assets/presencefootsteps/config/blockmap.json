@@ -1,4 +1,4 @@
 {
-  "modern_glass_doors:iron_glassdoor": "metalsubparts",
-  "modern_glass_doors:iron_glasstrapdoor": "metalsubparts"
+  "modern_glass_doors:iron_glass_door": "metalsubparts",
+  "modern_glass_doors:iron_glass_trapdoor": "metalsubparts"
 }

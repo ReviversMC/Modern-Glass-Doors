@@ -1,9 +1,9 @@
 {
-  "block.modern_glass_doors.oak_glassdoor": "Eichen-Glasstür",
-  "block.modern_glass_doors.spruce_glassdoor": "Fichten-Glasstür",
-  "block.modern_glass_doors.birch_glassdoor": "Birken-Glasstür",
-  "block.modern_glass_doors.acacia_glassdoor": "Akazien-Glasstür",
-  "block.modern_glass_doors.jungle_glassdoor": "Tropen-Glasstür",
-  "block.modern_glass_doors.dark_oak_glassdoor": "Schwarzeichen-Glasstür",
-  "block.modern_glass_doors.iron_glassdoor": "Eisen-Glasstür"
+  "block.modern_glass_doors.oak_glass_door": "Eichen-Glasstür",
+  "block.modern_glass_doors.spruce_glass_door": "Fichten-Glasstür",
+  "block.modern_glass_doors.birch_glass_door": "Birken-Glasstür",
+  "block.modern_glass_doors.acacia_glass_door": "Akazien-Glasstür",
+  "block.modern_glass_doors.jungle_glass_door": "Tropen-Glasstür",
+  "block.modern_glass_doors.dark_oak_glass_door": "Schwarzeichen-Glasstür",
+  "block.modern_glass_doors.iron_glass_door": "Eisen-Glasstür"
 }

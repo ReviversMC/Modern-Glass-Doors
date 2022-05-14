@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "modern_glass_doors:oak_glasstrapdoor",
-    "modern_glass_doors:spruce_glasstrapdoor",
-    "modern_glass_doors:birch_glasstrapdoor",
-    "modern_glass_doors:jungle_glasstrapdoor",
-    "modern_glass_doors:acacia_glasstrapdoor",
-    "modern_glass_doors:dark_oak_glasstrapdoor"
+    "modern_glass_doors:oak_glass_trapdoor",
+    "modern_glass_doors:spruce_glass_trapdoor",
+    "modern_glass_doors:birch_glass_trapdoor",
+    "modern_glass_doors:jungle_glass_trapdoor",
+    "modern_glass_doors:acacia_glass_trapdoor",
+    "modern_glass_doors:dark_oak_glass_trapdoor"
   ]
 }

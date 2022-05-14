@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "modern_glass_doors:iron_glassdoor",
-    "modern_glass_doors:iron_glasstrapdoor"
+    "modern_glass_doors:iron_glass_door",
+    "modern_glass_doors:iron_glass_trapdoor"
   ]
 }

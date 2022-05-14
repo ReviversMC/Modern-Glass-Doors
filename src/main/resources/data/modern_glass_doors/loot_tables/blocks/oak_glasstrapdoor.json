@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "modern_glass_doors:oak_glasstrapdoor"
+          "name": "modern_glass_doors:oak_glass_trapdoor"
         }
       ],
       "conditions": [

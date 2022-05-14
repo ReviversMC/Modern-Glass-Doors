@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "result": {
-    "item": "modern_glass_doors:oak_glasstrapdoor",
+    "item": "modern_glass_doors:oak_glass_trapdoor",
     "count": 1
   },
   "ingredients": [

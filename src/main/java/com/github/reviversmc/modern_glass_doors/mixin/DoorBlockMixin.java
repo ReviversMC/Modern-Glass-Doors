@@ -22,7 +22,7 @@ import com.github.reviversmc.modern_glass_doors.blocks.GlassDoorBlock;
 @Mixin(DoorBlock.class)
 public abstract class DoorBlockMixin {
 	@Inject(method = "onUse", at = @At("HEAD"), cancellable = true)
-	private void glassdoor_activate(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> callbackInfoReturnable) {
+	private void modern_glass_doors_convertToGlassDoor(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> callbackInfoReturnable) {
 		ItemStack heldStack = player.getInventory().getMainHandStack();
 
 		if (!(state.getBlock() instanceof GlassDoorBlock) && heldStack.getItem() == Items.GLASS_PANE) {

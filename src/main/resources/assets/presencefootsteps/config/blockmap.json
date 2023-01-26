@@ -1,4 +1,4 @@
 {
-	"glassdoor:iron_glassdoor": "metalsubparts",
-	"glassdoor:iron_glasstrapdoor": "metalsubparts"
+	"glassdoor:iron_glass_door": "metalsubparts",
+	"glassdoor:iron_glass_trapdoor": "metalsubparts"
 }

@@ -1,9 +1,9 @@
 {
-	"block.glassdoor.oak_glassdoor": "Dębowe szklane drzwi",
-	"block.glassdoor.spruce_glassdoor": "Świerkowe szklane drzwi",
-	"block.glassdoor.birch_glassdoor": "Brzozowe szklane drzwi",
-	"block.glassdoor.acacia_glassdoor": "Akacjowe szklane drzwi",
-	"block.glassdoor.jungle_glassdoor": "Dżunglowe szklane drzwi",
-	"block.glassdoor.dark_oak_glassdoor": "Ciemnodębowe szklane drzwi",
-	"block.glassdoor.iron_glassdoor": "Żelazne szklane drzwi"
+	"block.glassdoor.oak_glass_door": "Dębowe szklane drzwi",
+	"block.glassdoor.spruce_glass_door": "Świerkowe szklane drzwi",
+	"block.glassdoor.birch_glass_door": "Brzozowe szklane drzwi",
+	"block.glassdoor.acacia_glass_door": "Akacjowe szklane drzwi",
+	"block.glassdoor.jungle_glass_door": "Dżunglowe szklane drzwi",
+	"block.glassdoor.dark_oak_glass_door": "Ciemnodębowe szklane drzwi",
+	"block.glassdoor.iron_glass_door": "Żelazne szklane drzwi"
 }

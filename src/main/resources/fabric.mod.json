@@ -1,12 +1,13 @@
 {
 	"schemaVersion": 1,
-	"id": "glassdoor",
+	"id": "modern_glass_doors",
 	"version": "${version}",
-	"name": "Glass Doors",
-	"description": "More Prettier Doors",
+	"name": "Modern Glass Doors",
+	"description": "Prettier Doors",
 	"authors": [
 		"kyrptonaught",
-		"thefirethirteen"
+		"thefirethirteen",
+		"NebelNidas"
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/modern-glass-doors",
@@ -14,22 +15,22 @@
 		"sources": "https://github.com/ReviversMC/modern-glass-doors"
 	},
 	"license": "MIT",
-	"icon": "assets/glassdoor/icon.png",
+	"icon": "assets/modern_glass_doors/icon.png",
 	"environment": "*",
 	"mixins": [
 		{
-			"config": "net.kyrptonaught.glassdoor.json"
+			"config": "modern_glass_doors.mixins.json"
 		}
 	],
 	"entrypoints": {
 		"fabric-datagen": [
-			"net.kyrptonaught.glassdoor.datagen.ModernGlassDoorsDatagen"
+			"com.github.reviversmc.modern_glass_doors.datagen.ModernGlassDoorsDatagen"
 		],
 		"main": [
-			"net.kyrptonaught.glassdoor.ModernGlassDoors"
+			"com.github.reviversmc.modern_glass_doors.ModernGlassDoors"
 		],
 		"client" : [
-			"net.kyrptonaught.glassdoor.ModernGlassDoorsClient"
+			"com.github.reviversmc.modern_glass_doors.ModernGlassDoorsClient"
 		]
 	},
 	"depends": {

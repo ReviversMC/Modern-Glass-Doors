@@ -1,4 +1,4 @@
-package net.kyrptonaught.glassdoor.datagen;
+package com.github.reviversmc.modern_glass_doors.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

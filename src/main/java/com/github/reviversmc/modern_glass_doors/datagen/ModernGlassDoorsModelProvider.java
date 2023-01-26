@@ -1,4 +1,4 @@
-package net.kyrptonaught.glassdoor.datagen;
+package com.github.reviversmc.modern_glass_doors.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 
-import net.kyrptonaught.glassdoor.blocks.ModernGlassDoorsBlocks;
+import com.github.reviversmc.modern_glass_doors.blocks.ModernGlassDoorsBlocks;
 
 public class ModernGlassDoorsModelProvider extends FabricModelProvider {
 	public ModernGlassDoorsModelProvider(FabricDataGenerator dataGenerator) {

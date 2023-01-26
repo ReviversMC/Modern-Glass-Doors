@@ -1,4 +1,4 @@
-package net.kyrptonaught.glassdoor.blocks;
+package com.github.reviversmc.modern_glass_doors.blocks;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import net.minecraft.item.TallBlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import net.kyrptonaught.glassdoor.ModernGlassDoors;
+import com.github.reviversmc.modern_glass_doors.ModernGlassDoors;
 
 public class ModernGlassDoorsBlocks {
 	public static final List<GlassDoorBlock> GLASS_DOORS = new ArrayList<>();

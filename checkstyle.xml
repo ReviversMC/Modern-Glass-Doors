@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 
-<!-- ReviversMC checkstyle v1.1 (modified; added `net.kyrptonaught to import order rule) -->
+<!-- ReviversMC checkstyle v1.1 -->
 
 <module name="Checker">
 	<property name="charset" value="UTF-8"/>
@@ -76,7 +76,7 @@
 		<module name="UnusedImports"/>
 
 		<module name="ImportOrder">
-			<property name="groups" value="java,javax,*,com.github.reviversmc, net.kyrptonaught"/>
+			<property name="groups" value="java,javax,*,com.github.reviversmc"/>
 			<property name="ordered" value="false"/><!-- the plugin orders alphabetically without considering separators.. -->
 			<property name="separated" value="true"/>
 			<property name="option" value="top"/>

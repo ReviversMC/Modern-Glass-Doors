@@ -1,12 +1,12 @@
-package net.kyrptonaught.glassdoor;
+package com.github.reviversmc.modern_glass_doors;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 
-import net.kyrptonaught.glassdoor.blocks.GlassDoorBlock;
-import net.kyrptonaught.glassdoor.blocks.GlassTrapdoorBlock;
-import net.kyrptonaught.glassdoor.blocks.ModernGlassDoorsBlocks;
+import com.github.reviversmc.modern_glass_doors.blocks.GlassDoorBlock;
+import com.github.reviversmc.modern_glass_doors.blocks.GlassTrapdoorBlock;
+import com.github.reviversmc.modern_glass_doors.blocks.ModernGlassDoorsBlocks;
 
 public class ModernGlassDoorsClient implements ClientModInitializer {
 	@Override

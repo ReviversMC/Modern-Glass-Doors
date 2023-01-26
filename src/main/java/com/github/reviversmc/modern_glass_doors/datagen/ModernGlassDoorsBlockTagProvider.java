@@ -1,4 +1,4 @@
-package net.kyrptonaught.glassdoor.datagen;
+package com.github.reviversmc.modern_glass_doors.datagen;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,10 +12,10 @@ import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import net.kyrptonaught.glassdoor.ModernGlassDoors;
-import net.kyrptonaught.glassdoor.blocks.GlassDoorBlock;
-import net.kyrptonaught.glassdoor.blocks.GlassTrapdoorBlock;
-import net.kyrptonaught.glassdoor.blocks.ModernGlassDoorsBlocks;
+import com.github.reviversmc.modern_glass_doors.ModernGlassDoors;
+import com.github.reviversmc.modern_glass_doors.blocks.GlassDoorBlock;
+import com.github.reviversmc.modern_glass_doors.blocks.GlassTrapdoorBlock;
+import com.github.reviversmc.modern_glass_doors.blocks.ModernGlassDoorsBlocks;
 
 public class ModernGlassDoorsBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 	public static final TagKey<Block> WOODEN_GLASS_DOORS = TagKey.of(Registry.BLOCK_KEY, new Identifier(ModernGlassDoors.MOD_ID, "wooden_glass_doors"));

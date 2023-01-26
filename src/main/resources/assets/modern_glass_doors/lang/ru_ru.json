@@ -1,0 +1,16 @@
+{
+	"block.modern_glass_doors.oak_glass_door": "Стеклянная дубовая дверь",
+	"block.modern_glass_doors.spruce_glass_door": "Стеклянная еловая дверь",
+	"block.modern_glass_doors.birch_glass_door": "Стеклянная дверь из березы",
+	"block.modern_glass_doors.acacia_glass_door": "Стеклянная дверь из акации",
+	"block.modern_glass_doors.jungle_glass_door": "Стеклянная дверь из тропического дерева",
+	"block.modern_glass_doors.dark_oak_glass_door": "Стеклянная дверь из темного дуба",
+	"block.modern_glass_doors.iron_glass_door": "Стеклянная железная дверь",
+	"block.modern_glass_doors.oak_glass_trapdoor": "Стеклянный дубовый люк",
+	"block.modern_glass_doors.spruce_glass_trapdoor": "Стеклянный еловый люк",
+	"block.modern_glass_doors.birch_glass_trapdoor": "Стеклянный люк из березы",
+	"block.modern_glass_doors.acacia_glass_trapdoor": "Стеклянный люк из акации",
+	"block.modern_glass_doors.jungle_glass_trapdoor": "Стеклянный люк из тропического дерева",
+	"block.modern_glass_doors.dark_oak_glass_trapdoor": "Стеклянный люк из темного дуба",
+	"block.modern_glass_doors.iron_glass_trapdoor": "Стеклянный железный люк"
+}

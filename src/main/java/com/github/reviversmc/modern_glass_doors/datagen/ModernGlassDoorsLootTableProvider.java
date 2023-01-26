@@ -1,11 +1,11 @@
-package net.kyrptonaught.glassdoor.datagen;
+package com.github.reviversmc.modern_glass_doors.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.BlockLootTableGenerator;
 
-import net.kyrptonaught.glassdoor.blocks.ModernGlassDoorsBlocks;
+import com.github.reviversmc.modern_glass_doors.blocks.ModernGlassDoorsBlocks;
 
 public class ModernGlassDoorsLootTableProvider extends FabricBlockLootTableProvider {
 	public ModernGlassDoorsLootTableProvider(FabricDataGenerator dataGenerator) {

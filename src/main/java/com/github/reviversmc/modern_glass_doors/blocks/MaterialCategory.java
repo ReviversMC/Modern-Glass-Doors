@@ -1,4 +1,4 @@
-package net.kyrptonaught.glassdoor.blocks;
+package com.github.reviversmc.modern_glass_doors.blocks;
 
 public enum MaterialCategory {
 	WOOD,

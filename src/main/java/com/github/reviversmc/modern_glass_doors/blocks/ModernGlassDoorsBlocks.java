@@ -3,6 +3,7 @@ package com.github.reviversmc.modern_glass_doors.blocks;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.DoorBlock;
@@ -10,8 +11,9 @@ import net.minecraft.block.TrapdoorBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.TallBlockItem;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 import com.github.reviversmc.modern_glass_doors.ModernGlassDoors;
 
@@ -44,12 +46,14 @@ public class ModernGlassDoorsBlocks {
 	public static Block registerDoor(String material, MaterialCategory materialCategory, Block parentDoorType) {
 		assert parentDoorType instanceof DoorBlock;
 
-		GlassDoorBlock door = new GlassDoorBlock(materialCategory, parentDoorType);
+		GlassDoorBlock door = new GlassDoorBlock(materialCategory, (DoorBlock) parentDoorType);
 		Identifier id = new Identifier(ModernGlassDoors.MOD_ID, material + "_glass_door");
 
 		GLASS_DOORS.add(door);
-		Registry.register(Registry.BLOCK, id, door);
-		Registry.register(Registry.ITEM, id, new TallBlockItem(door, new Item.Settings().group(ModernGlassDoors.ITEM_GROUP)));
+		Registry.register(Registries.BLOCK, id, door);
+		Registry.register(Registries.ITEM, id, new TallBlockItem(door, new Item.Settings()));
+		ItemGroupEvents.modifyEntriesEvent(ModernGlassDoors.ITEM_GROUP)
+				.register(entries -> entries.add(door));
 
 		return door;
 	}
@@ -57,12 +61,14 @@ public class ModernGlassDoorsBlocks {
 	public static Block registerTrapdoor(String material, MaterialCategory materialCategory, Block parentTrapdoorType) {
 		assert parentTrapdoorType instanceof TrapdoorBlock;
 
-		GlassTrapdoorBlock trapdoor = new GlassTrapdoorBlock(materialCategory, parentTrapdoorType);
+		GlassTrapdoorBlock trapdoor = new GlassTrapdoorBlock(materialCategory, (TrapdoorBlock) parentTrapdoorType);
 		Identifier id = new Identifier(ModernGlassDoors.MOD_ID, material + "_glass_trapdoor");
 
 		GLASS_TRAPDOORS.add(trapdoor);
-		Registry.register(Registry.BLOCK, id, trapdoor);
-		Registry.register(Registry.ITEM, id, new BlockItem(trapdoor, new Item.Settings().group(ModernGlassDoors.ITEM_GROUP)));
+		Registry.register(Registries.BLOCK, id, trapdoor);
+		Registry.register(Registries.ITEM, id, new BlockItem(trapdoor, new Item.Settings()));
+		ItemGroupEvents.modifyEntriesEvent(ModernGlassDoors.ITEM_GROUP)
+				.register(entries -> entries.add(trapdoor));
 
 		return trapdoor;
 	}

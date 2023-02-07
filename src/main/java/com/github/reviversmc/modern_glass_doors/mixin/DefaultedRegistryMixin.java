@@ -4,12 +4,16 @@ import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
+import net.minecraft.registry.SimpleDefaultedRegistry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.DefaultedRegistry;
 
 import com.github.reviversmc.modern_glass_doors.ModernGlassDoors;
 
-@Mixin(DefaultedRegistry.class)
+/** This Mixin is a class that works as a datafixer.
+  * Upon loading a world it will check for missing objects in the recipe and replace them in order to
+  * prevent air pockets when upgrading from older worlds, as well as returning changed/removed items.
+  */
+@Mixin(SimpleDefaultedRegistry.class)
 public class DefaultedRegistryMixin {
 	private static final String OLD_MOD_ID = "glassdoor";
 

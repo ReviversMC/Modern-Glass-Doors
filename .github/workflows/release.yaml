@@ -48,17 +48,12 @@ jobs:
           files-primary: build/libs/!(*-@(dev|sources)).jar
           files-secondary: null
 
-          name: 3.1.0 for MC 1.19 to 1.19.2
-          version: 3.1.0+1.19
+          name: 3.1.0 for MC 1.19.3
+          version: 3.1.0+1.19.3
           version-type: release
 
           loaders: |
             fabric
-
-          game-versions: |
-            1.19
-            1.19.1
-            1.19.2
 
           dependencies: |
             fabric-api       | depends

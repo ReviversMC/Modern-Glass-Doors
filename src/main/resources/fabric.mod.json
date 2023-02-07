@@ -34,9 +34,8 @@
 		]
 	},
 	"depends": {
-		"minecraft": ">=1.19 <=1.19.2",
-		"fabric-item-api-v1": "*",
-		"fabric-item-groups-v0": "*",
+		"minecraft": ">=1.19.3",
+		"fabric-item-group-api-v1": "*",
 		"fabric-blockrenderlayer-v1": "*"
 	}
 }

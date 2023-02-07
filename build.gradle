@@ -51,8 +51,7 @@ dependencies {
 
 	// Required Fabric API modules
 	modImplementation(fabricApi.module("fabric-api-base", project.fabric_api_version))
-	modImplementation(fabricApi.module("fabric-item-api-v1", project.fabric_api_version))
-	modImplementation(fabricApi.module("fabric-item-groups-v0", project.fabric_api_version))
+	modImplementation(fabricApi.module("fabric-item-group-api-v1", project.fabric_api_version))
 	modImplementation(fabricApi.module("fabric-blockrenderlayer-v1", project.fabric_api_version))
 	modImplementation(fabricApi.module("fabric-data-generation-api-v1", project.fabric_api_version))
 
@@ -71,7 +70,6 @@ dependencies {
 		modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 		modRuntimeOnly "maven.modrinth:lazydfu:${project.lazydfu_version}"
 		modRuntimeOnly "maven.modrinth:sodium:${project.sodium_version}"
-		runtimeOnly "org.joml:joml:${project.sodium_joml_version}"
 		modRuntimeOnly "maven.modrinth:lithium:${project.lithium_version}"
 		modRuntimeOnly "maven.modrinth:starlight:${project.starlight_version}"
 		modRuntimeOnly "maven.modrinth:ferrite-core:${project.ferrite_core_version}"
@@ -82,6 +80,7 @@ dependencies {
 
 
 loom {
+	accessWidenerPath = file("src/main/resources/modern_glass_doors.accesswidener")
 	runs {
 		// This adds a new Gradle task that runs the Datagen API: `./gradlew runDatagen`
 		datagen {

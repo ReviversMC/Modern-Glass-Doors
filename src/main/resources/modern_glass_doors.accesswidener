@@ -1,0 +1,5 @@
+accessWidener	v1	named
+accessible	field	net/minecraft/block/DoorBlock	closeSound	Lnet/minecraft/sound/SoundEvent;
+accessible	field	net/minecraft/block/DoorBlock	openSound	Lnet/minecraft/sound/SoundEvent;
+accessible	field	net/minecraft/block/TrapdoorBlock	closeSound	Lnet/minecraft/sound/SoundEvent;
+accessible	field	net/minecraft/block/TrapdoorBlock	openSound	Lnet/minecraft/sound/SoundEvent;

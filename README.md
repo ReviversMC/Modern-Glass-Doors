@@ -1,8 +1,8 @@
 <img height="70" align="right" src="./assets/icon.png">
 
 # Modern Glass Doors
-[![CurseForge downloads](https://cf.way2muchnoise.eu/modern-glass-doors.svg)](https://www.curseforge.com/minecraft/mc-mods/modern-glass-doors)
-[![CurseForge versions](https://cf.way2muchnoise.eu/versions/modern-glass-doors.svg)](https://www.curseforge.com/minecraft/mc-mods/modern-glass-doors)
+[![CurseForge downloads](https://cf.way2muchnoise.eu/326641.svg)](https://www.curseforge.com/minecraft/mc-mods/modern-glass-doors)
+[![CurseForge versions](https://cf.way2muchnoise.eu/versions/326641.svg)](https://www.curseforge.com/minecraft/mc-mods/modern-glass-doors)
 ![Environment: both](https://img.shields.io/badge/environment-both-1976d2?style=flat)
 [![Discord chat](https://img.shields.io/badge/chat%20on-discord-7289DA?logo=discord&logoColor=white)](https://discord.gg/6bTGYFppfz)
 

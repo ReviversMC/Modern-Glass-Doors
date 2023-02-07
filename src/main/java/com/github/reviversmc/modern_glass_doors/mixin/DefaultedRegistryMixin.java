@@ -9,10 +9,11 @@ import net.minecraft.util.Identifier;
 
 import com.github.reviversmc.modern_glass_doors.ModernGlassDoors;
 
-/** This Mixin is a class that works as a datafixer.
-  * Upon loading a world it will check for missing objects in the recipe and replace them in order to
-  * prevent air pockets when upgrading from older worlds, as well as returning changed/removed items.
-  */
+/**
+ * This Mixin is a class that works as a datafixer.
+ * Upon loading a world it will check for missing objects (blocks, items etc.) and replace them in order to
+ * prevent air pockets when upgrading from older worlds, as well as returning changed/removed items.
+ */
 @Mixin(SimpleDefaultedRegistry.class)
 public class DefaultedRegistryMixin {
 	private static final String OLD_MOD_ID = "glassdoor";

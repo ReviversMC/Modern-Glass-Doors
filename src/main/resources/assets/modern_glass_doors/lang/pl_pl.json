@@ -1,9 +1,25 @@
 {
+	"itemGroup.modern_glass_doors.blocks": "Nowoczesne Szklane Drzwi",
 	"block.modern_glass_doors.oak_glass_door": "Dębowe szklane drzwi",
 	"block.modern_glass_doors.spruce_glass_door": "Świerkowe szklane drzwi",
 	"block.modern_glass_doors.birch_glass_door": "Brzozowe szklane drzwi",
 	"block.modern_glass_doors.acacia_glass_door": "Akacjowe szklane drzwi",
 	"block.modern_glass_doors.jungle_glass_door": "Dżunglowe szklane drzwi",
 	"block.modern_glass_doors.dark_oak_glass_door": "Ciemnodębowe szklane drzwi",
-	"block.modern_glass_doors.iron_glass_door": "Żelazne szklane drzwi"
+	"block.modern_glass_doors.crimson_glass_door": "Szkarłatne szklane drzwi",
+	"block.modern_glass_doors.warped_glass_door": "Spaczone szklane drzwi",
+	"block.modern_glass_doors.iron_glass_door": "Żelazne szklane drzwi",
+	"block.modern_glass_doors.mangrove_glass_door": "Namorzynowe szklane drzwi",
+	"block.modern_glass_doors.bamboo_glass_door": "Bambusowe szklane drzwi",
+	"block.modern_glass_doors.oak_glass_trapdoor": "Dębowa szklana klapa",
+	"block.modern_glass_doors.spruce_glass_trapdoor": "Świerkowa szklana klapa",
+	"block.modern_glass_doors.birch_glass_trapdoor": "Brzozowa szklana klapa",
+	"block.modern_glass_doors.acacia_glass_trapdoor": "Akacjowa szklana klapa",
+	"block.modern_glass_doors.jungle_glass_trapdoor": "Dżunglowa szklana klapa",
+	"block.modern_glass_doors.dark_oak_glass_trapdoor": "Ciemnodębowa szklana klapa",
+	"block.modern_glass_doors.crimson_glass_trapdoor": "Szkarłatna szklana klapa",
+	"block.modern_glass_doors.warped_glass_trapdoor": "Spaczona szklana klapa",
+	"block.modern_glass_doors.iron_glass_trapdoor": "Żelazna szklana klapa",
+	"block.modern_glass_doors.mangrove_glass_trapdoor": "Namorzynowa szklana klapa",
+	"block.modern_glass_doors.bamboo_glass_trapdoor": "Bambusowa szklana klapa"
 }

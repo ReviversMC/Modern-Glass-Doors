@@ -20,6 +20,7 @@
 	"license": "MIT",
 	"icon": "assets/modern_glass_doors/icon.png",
 	"environment": "*",
+	"accessWidener": "modern_glass_doors.accesswidener",
 	"mixins": [
 		{
 			"config": "modern_glass_doors.mixins.json"

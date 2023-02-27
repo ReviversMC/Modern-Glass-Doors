@@ -28,7 +28,7 @@ public class GlassTrapdoorBlock extends TrapdoorBlock {
 	private final TrapdoorBlock parentTrapdoorType;
 
 	GlassTrapdoorBlock(MaterialCategory materialCategory, TrapdoorBlock parentTrapdoorType) {
-		super(Block.Settings.copy(parentTrapdoorType), parentTrapdoorType.closeSound, parentTrapdoorType.openSound);
+		super(Block.Settings.copy(parentTrapdoorType), parentTrapdoorType.blockSetType);
 
 		this.materialCategory = materialCategory;
 		this.parentTrapdoorType = (TrapdoorBlock) parentTrapdoorType;

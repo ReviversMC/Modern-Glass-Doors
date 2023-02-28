@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.Material;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -46,46 +47,38 @@ public class ModernGlassDoorsBlockTagProvider extends FabricTagProvider.BlockTag
 				getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS),
 				getOrCreateTagBuilder(WOODEN_GLASS_TRAPDOORS));
 
-		List<FabricTagBuilder> metalGlassTrapDoorTagBuilders = Arrays.asList(
+		List<FabricTagBuilder> metalGlassTrapdoorTagBuilders = Arrays.asList(
 				getOrCreateTagBuilder(BlockTags.TRAPDOORS),
 				getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE),
 				getOrCreateTagBuilder(METAL_GLASS_TRAPDOORS));
 
+		Material material;
+
 		for (GlassDoorBlock door: ModernGlassDoorsBlocks.GLASS_DOORS) {
-			switch (door.getMaterialCategory()) {
-				case NON_FLAMMABLE_WOOD:
-				case WOOD:
-					for (FabricTagBuilder tagBuilder : woodenGlassDoorTagBuilders) {
-						tagBuilder.add(door);
-					}
+			material = door.getMaterialCategory();
 
-					break;
-
-				case METAL:
-					for (FabricTagBuilder tagBuilder : metalGlassDoorTagBuilders) {
-						tagBuilder.add(door);
-					}
-
-					break;
+			if (material == Material.NETHER_WOOD || material == Material.WOOD) {
+				for (FabricTagBuilder tagBuilder : woodenGlassDoorTagBuilders) {
+					tagBuilder.add(door);
+				}
+			} else if (material == Material.METAL) {
+				for (FabricTagBuilder tagBuilder : metalGlassDoorTagBuilders) {
+					tagBuilder.add(door);
+				}
 			}
 		}
 
 		for (GlassTrapdoorBlock trapdoor: ModernGlassDoorsBlocks.GLASS_TRAPDOORS) {
-			switch (trapdoor.getMaterialCategory()) {
-				case NON_FLAMMABLE_WOOD:
-				case WOOD:
-					for (FabricTagBuilder tagBuilder : woodenGlassTrapdoorTagBuilders) {
-						tagBuilder.add(trapdoor);
-					}
+			material = trapdoor.getMaterialCategory();
 
-					break;
-
-				case METAL:
-					for (FabricTagBuilder tagBuilder : metalGlassTrapDoorTagBuilders) {
-						tagBuilder.add(trapdoor);
-					}
-
-					break;
+			if (material == Material.NETHER_WOOD || material == Material.WOOD) {
+				for (FabricTagBuilder tagBuilder : woodenGlassTrapdoorTagBuilders) {
+					tagBuilder.add(trapdoor);
+				}
+			} else if (material == Material.METAL) {
+				for (FabricTagBuilder tagBuilder : metalGlassTrapdoorTagBuilders) {
+					tagBuilder.add(trapdoor);
+				}
 			}
 		}
 

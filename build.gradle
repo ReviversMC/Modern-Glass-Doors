@@ -68,7 +68,6 @@ dependencies {
 		modRuntimeOnly "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 		modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
-		modRuntimeOnly "maven.modrinth:lazydfu:${project.lazydfu_version}"
 		// modRuntimeOnly "maven.modrinth:sodium:${project.sodium_version}"
 		// modRuntimeOnly "maven.modrinth:lithium:${project.lithium_version}"
 		modRuntimeOnly "maven.modrinth:starlight:${project.starlight_version}"

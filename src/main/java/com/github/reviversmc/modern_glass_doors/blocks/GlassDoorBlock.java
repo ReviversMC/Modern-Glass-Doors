@@ -3,6 +3,7 @@ package com.github.reviversmc.modern_glass_doors.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.DoorBlock;
+import net.minecraft.block.Material;
 
 public class GlassDoorBlock extends DoorBlock {
 	public static BlockState copyState(BlockState state) {
@@ -22,17 +23,17 @@ public class GlassDoorBlock extends DoorBlock {
 		return state;
 	}
 
-	public final MaterialCategory materialCategory;
+	public final Material materialCategory;
 	public final DoorBlock parentDoorType;
 
-	GlassDoorBlock(MaterialCategory material, DoorBlock parentDoorType) {
-		super(Block.Settings.copy(parentDoorType), parentDoorType.closeSound, parentDoorType.openSound);
+	GlassDoorBlock(Material materialCategory, DoorBlock parentDoorType) {
+		super(Block.Settings.copy(parentDoorType), parentDoorType.blockSetType);
 
-		this.materialCategory = material;
+		this.materialCategory = materialCategory;
 		this.parentDoorType = (DoorBlock) parentDoorType;
 	}
 
-	public MaterialCategory getMaterialCategory() {
+	public Material getMaterialCategory() {
 		return materialCategory;
 	}
 

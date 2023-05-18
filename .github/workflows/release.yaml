@@ -48,9 +48,9 @@ jobs:
           files-primary: build/libs/!(*-@(dev|sources)).jar
           files-secondary: null
 
-          name: Release 4.2.0 for Minecraft 1.19.4
-          version: 4.2.0+1.19.4
-          version-type: release
+          name: Beta 5.0.0 for Minecraft 1.20 Prerelease 2
+          version: 5.0.0.beta.1+1.20-pre2
+          version-type: beta
 
           loaders: |
             fabric
@@ -59,7 +59,7 @@ jobs:
             fabric-api | depends | *
 
           game-versions: |
-            1.19.4
+            1.20-pre2
 
           java: |
             17

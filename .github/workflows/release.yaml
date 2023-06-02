@@ -48,8 +48,8 @@ jobs:
           files-primary: build/libs/!(*-@(dev|sources)).jar
           files-secondary: null
 
-          name: Beta 5.0.0 for Minecraft 1.20 Prerelease 2
-          version: 5.0.0.beta.1+1.20-pre2
+          name: Beta 2 of 5.0.0 for Minecraft 1.20 Release Candidate 1
+          version: 5.0.0.beta.2+1.20-rc1
           version-type: beta
 
           loaders: |
@@ -59,7 +59,7 @@ jobs:
             fabric-api | depends | *
 
           game-versions: |
-            1.20-pre2
+            1.20-rc1
 
           java: |
             17

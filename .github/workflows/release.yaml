@@ -59,10 +59,9 @@ jobs:
             fabric-api | depends | *
 
           game-versions: |
-            [1.20-rc1,1.20.1-rc1]
+            1.20-rc1
 
-          game-version-filter: |
-            any
+          version-resolver: all
 
           java: |
             17

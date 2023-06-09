@@ -4,11 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.Material;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -18,6 +17,7 @@ import net.minecraft.util.Identifier;
 import com.github.reviversmc.modern_glass_doors.ModernGlassDoors;
 import com.github.reviversmc.modern_glass_doors.blocks.GlassDoorBlock;
 import com.github.reviversmc.modern_glass_doors.blocks.GlassTrapdoorBlock;
+import com.github.reviversmc.modern_glass_doors.blocks.MaterialCategory;
 import com.github.reviversmc.modern_glass_doors.blocks.ModernGlassDoorsBlocks;
 
 public class ModernGlassDoorsBlockTagProvider extends FabricTagProvider.BlockTagProvider {
@@ -52,16 +52,16 @@ public class ModernGlassDoorsBlockTagProvider extends FabricTagProvider.BlockTag
 				getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE),
 				getOrCreateTagBuilder(METAL_GLASS_TRAPDOORS));
 
-		Material material;
+		MaterialCategory material;
 
 		for (GlassDoorBlock door: ModernGlassDoorsBlocks.GLASS_DOORS) {
 			material = door.getMaterialCategory();
 
-			if (material == Material.NETHER_WOOD || material == Material.WOOD) {
+			if (material == MaterialCategory.NETHER_WOOD || material == MaterialCategory.WOOD) {
 				for (FabricTagBuilder tagBuilder : woodenGlassDoorTagBuilders) {
 					tagBuilder.add(door);
 				}
-			} else if (material == Material.METAL) {
+			} else if (material == MaterialCategory.METAL) {
 				for (FabricTagBuilder tagBuilder : metalGlassDoorTagBuilders) {
 					tagBuilder.add(door);
 				}
@@ -71,11 +71,11 @@ public class ModernGlassDoorsBlockTagProvider extends FabricTagProvider.BlockTag
 		for (GlassTrapdoorBlock trapdoor: ModernGlassDoorsBlocks.GLASS_TRAPDOORS) {
 			material = trapdoor.getMaterialCategory();
 
-			if (material == Material.NETHER_WOOD || material == Material.WOOD) {
+			if (material == MaterialCategory.NETHER_WOOD || material == MaterialCategory.WOOD) {
 				for (FabricTagBuilder tagBuilder : woodenGlassTrapdoorTagBuilders) {
 					tagBuilder.add(trapdoor);
 				}
-			} else if (material == Material.METAL) {
+			} else if (material == MaterialCategory.METAL) {
 				for (FabricTagBuilder tagBuilder : metalGlassTrapdoorTagBuilders) {
 					tagBuilder.add(trapdoor);
 				}

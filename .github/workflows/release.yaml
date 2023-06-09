@@ -48,9 +48,9 @@ jobs:
           files-primary: build/libs/!(*-@(dev|sources)).jar
           files-secondary: null
 
-          name: Beta 2 of 5.0.0 for Minecraft 1.20 Release Candidate 1
-          version: 5.0.0.beta.2+1.20-rc1
-          version-type: beta
+          name: Release 5.0.0 for Minecraft 1.20
+          version: 5.0.0+1.20
+          version-type: release
 
           loaders: |
             fabric
@@ -59,7 +59,10 @@ jobs:
             fabric-api | depends | *
 
           game-versions: |
-            1.20-rc1
+            [1.20-rc1,1.20.1-rc1]
+
+          game-version-filter: |
+            any
 
           java: |
             17

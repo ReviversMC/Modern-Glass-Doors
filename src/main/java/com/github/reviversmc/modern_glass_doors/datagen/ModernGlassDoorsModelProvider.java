@@ -20,7 +20,7 @@ public class ModernGlassDoorsModelProvider extends FabricModelProvider {
 		}
 
 		for (Block trapdoor: ModernGlassDoorsBlocks.GLASS_TRAPDOORS) {
-			generator.registerTrapdoor(trapdoor);
+			generator.registerOrientableTrapdoor(trapdoor);
 		}
 	}
 

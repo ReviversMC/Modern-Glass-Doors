@@ -48,8 +48,8 @@ jobs:
           files-primary: build/libs/!(*-@(dev|sources)).jar
           files-secondary: null
 
-          name: Release 5.0.0 for Minecraft 1.20
-          version: 5.0.0+1.20
+          name: Release 5.0.1 for Minecraft 1.20
+          version: 5.0.1+1.20
           version-type: release
 
           loaders: |

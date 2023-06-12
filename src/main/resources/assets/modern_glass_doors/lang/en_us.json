@@ -11,6 +11,7 @@
 	"block.modern_glass_doors.iron_glass_door": "Iron Glass Door",
 	"block.modern_glass_doors.mangrove_glass_door": "Mangrove Glass Door",
 	"block.modern_glass_doors.bamboo_glass_door": "Bamboo Glass Door",
+	"block.modern_glass_doors.cherry_glass_door": "Cherry Glass Door",
 	"block.modern_glass_doors.oak_glass_trapdoor": "Oak Glass Trapdoor",
 	"block.modern_glass_doors.spruce_glass_trapdoor": "Spruce Glass Trapdoor",
 	"block.modern_glass_doors.birch_glass_trapdoor": "Birch Glass Trapdoor",
@@ -21,5 +22,6 @@
 	"block.modern_glass_doors.warped_glass_trapdoor": "Warped Glass Trapdoor",
 	"block.modern_glass_doors.iron_glass_trapdoor": "Iron Glass Trapdoor",
 	"block.modern_glass_doors.mangrove_glass_trapdoor": "Mangrove Glass Trapdoor",
-	"block.modern_glass_doors.bamboo_glass_trapdoor": "Bamboo Glass Trapdoor"
+	"block.modern_glass_doors.bamboo_glass_trapdoor": "Bamboo Glass Trapdoor",
+	"block.modern_glass_doors.cherry_glass_trapdoor": "Cherry Glass Trapdoor"
 }

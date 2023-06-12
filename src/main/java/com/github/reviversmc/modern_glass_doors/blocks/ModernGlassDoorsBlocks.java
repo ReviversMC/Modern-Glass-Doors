@@ -33,6 +33,7 @@ public class ModernGlassDoorsBlocks {
 	public static final Block IRON_GLASS_DOOR = registerDoor("iron", MaterialCategory.METAL, Blocks.IRON_DOOR);
 	public static final Block MANGROVE_GLASS_DOOR = registerDoor("mangrove", MaterialCategory.WOOD, Blocks.MANGROVE_DOOR);
 	public static final Block BAMBOO_GLASS_DOOR = registerDoor("bamboo", MaterialCategory.WOOD, Blocks.BAMBOO_DOOR);
+	public static final Block CHERRY_GLASS_DOOR = registerDoor("cherry", MaterialCategory.WOOD, Blocks.CHERRY_DOOR);
 
 	// Glass trapdoors
 	public static final Block OAK_GLASS_TRAPDOOR = registerTrapdoor("oak", MaterialCategory.WOOD, Blocks.OAK_TRAPDOOR);
@@ -46,6 +47,7 @@ public class ModernGlassDoorsBlocks {
 	public static final Block IRON_GLASS_TRAPDOOR = registerTrapdoor("iron", MaterialCategory.METAL, Blocks.IRON_TRAPDOOR);
 	public static final Block MANGROVE_GLASS_TRAPDOOR = registerTrapdoor("mangrove", MaterialCategory.WOOD, Blocks.MANGROVE_TRAPDOOR);
 	public static final Block BAMBOO_GLASS_TRAPDOOR = registerTrapdoor("bamboo", MaterialCategory.WOOD, Blocks.BAMBOO_TRAPDOOR);
+	public static final Block CHERRY_GLASS_TRAPDOOR = registerTrapdoor("cherry", MaterialCategory.WOOD, Blocks.CHERRY_TRAPDOOR);
 
 	public static Block registerDoor(String material, MaterialCategory materialCategory, Block parentDoorType) {
 		assert parentDoorType instanceof DoorBlock;

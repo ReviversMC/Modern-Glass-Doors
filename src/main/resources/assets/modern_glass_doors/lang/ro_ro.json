@@ -11,6 +11,7 @@
 	"block.modern_glass_doors.iron_glass_door": "Ușă de fier cu sticlă",
 	"block.modern_glass_doors.mangrove_glass_door": "Ușă de mangrovă cu sticlă",
 	"block.modern_glass_doors.bamboo_glass_door": "Ușă de bambus cu sticlă",
+	"block.modern_glass_doors.cherry_glass_door": "Ușă de cireș cu sticlă",
 	"block.modern_glass_doors.oak_glass_trapdoor": "Trapă de stejar cu sticlă",
 	"block.modern_glass_doors.spruce_glass_trapdoor": "Trapă de molid cu sticlă",
 	"block.modern_glass_doors.birch_glass_trapdoor": "Trapă de mesteacăn cu sticlă",
@@ -21,5 +22,6 @@
 	"block.modern_glass_doors.warped_glass_trapdoor": "Trapă deformată cu sticlă",
 	"block.modern_glass_doors.iron_glass_trapdoor": "Trapă de fier cu sticlă",
 	"block.modern_glass_doors.mangrove_glass_trapdoor": "Trapă de mangrovă cu sticlă",
-	"block.modern_glass_doors.bamboo_glass_trapdoor": "Trapă de bambus cu sticlă"
+	"block.modern_glass_doors.bamboo_glass_trapdoor": "Trapă de bambus cu sticlă",
+	"block.modern_glass_doors.cherry_glass_trapdoor": "Trapă de cireș cu sticlă"
 }

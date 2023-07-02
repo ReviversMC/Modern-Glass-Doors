@@ -22,6 +22,8 @@ public class ModernGlassDoors implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModernGlassDoorsBlocks.register();
+
 		Registry.register(Registries.ITEM_GROUP, ITEM_GROUP, FabricItemGroup.builder()
 				.displayName(Text.translatable("itemGroup." + MOD_ID + ".blocks"))
 				.icon(() -> new ItemStack(ModernGlassDoorsBlocks.OAK_GLASS_DOOR.asItem()))

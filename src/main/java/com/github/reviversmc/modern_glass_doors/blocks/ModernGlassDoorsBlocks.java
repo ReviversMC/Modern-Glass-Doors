@@ -20,28 +20,52 @@ public class ModernGlassDoorsBlocks {
 	public static final List<GlassTrapdoorBlock> GLASS_TRAPDOORS = new ArrayList<>();
 
 	// Glass doors
-	public static final Block OAK_GLASS_DOOR = registerDoor("oak", MaterialCategory.WOOD, Blocks.OAK_DOOR);
-	public static final Block SPRUCE_GLASS_DOOR = registerDoor("spruce", MaterialCategory.WOOD, Blocks.SPRUCE_DOOR);
-	public static final Block BIRCH_GLASS_DOOR = registerDoor("birch", MaterialCategory.WOOD, Blocks.BIRCH_DOOR);
-	public static final Block ACACIA_GLASS_DOOR = registerDoor("acacia", MaterialCategory.WOOD, Blocks.ACACIA_DOOR);
-	public static final Block JUNGLE_GLASS_DOOR = registerDoor("jungle", MaterialCategory.WOOD, Blocks.JUNGLE_DOOR);
-	public static final Block DARK_OAK_GLASS_DOOR = registerDoor("dark_oak", MaterialCategory.WOOD, Blocks.DARK_OAK_DOOR);
-	public static final Block CRIMSON_GLASS_DOOR = registerDoor("crimson", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.CRIMSON_DOOR);
-	public static final Block WARPED_GLASS_DOOR = registerDoor("warped", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.WARPED_DOOR);
-	public static final Block IRON_GLASS_DOOR = registerDoor("iron", MaterialCategory.METAL, Blocks.IRON_DOOR);
+	public static Block OAK_GLASS_DOOR;
+	public static Block SPRUCE_GLASS_DOOR;
+	public static Block BIRCH_GLASS_DOOR;
+	public static Block ACACIA_GLASS_DOOR;
+	public static Block JUNGLE_GLASS_DOOR;
+	public static Block DARK_OAK_GLASS_DOOR;
+	public static Block CRIMSON_GLASS_DOOR;
+	public static Block WARPED_GLASS_DOOR;
+	public static Block IRON_GLASS_DOOR;
 
 	// Glass trapdoors
-	public static final Block OAK_GLASS_TRAPDOOR = registerTrapdoor("oak", MaterialCategory.WOOD, Blocks.OAK_TRAPDOOR);
-	public static final Block SPRUCE_GLASS_TRAPDOOR = registerTrapdoor("spruce", MaterialCategory.WOOD, Blocks.SPRUCE_TRAPDOOR);
-	public static final Block BIRCH_GLASS_TRAPDOOR = registerTrapdoor("birch", MaterialCategory.WOOD, Blocks.BIRCH_TRAPDOOR);
-	public static final Block ACACIA_GLASS_TRAPDOOR = registerTrapdoor("acacia", MaterialCategory.WOOD, Blocks.ACACIA_TRAPDOOR);
-	public static final Block JUNGLE_GLASS_TRAPDOOR = registerTrapdoor("jungle", MaterialCategory.WOOD, Blocks.JUNGLE_TRAPDOOR);
-	public static final Block DARK_OAK_GLASS_TRAPDOOR = registerTrapdoor("dark_oak", MaterialCategory.WOOD, Blocks.DARK_OAK_TRAPDOOR);
-	public static final Block CRIMSON_GLASS_TRAPDOOR = registerTrapdoor("crimson", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.CRIMSON_TRAPDOOR);
-	public static final Block WARPED_GLASS_TRAPDOOR = registerTrapdoor("warped", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.WARPED_TRAPDOOR);
-	public static final Block IRON_GLASS_TRAPDOOR = registerTrapdoor("iron", MaterialCategory.METAL, Blocks.IRON_TRAPDOOR);
+	public static Block OAK_GLASS_TRAPDOOR;
+	public static Block SPRUCE_GLASS_TRAPDOOR;
+	public static Block BIRCH_GLASS_TRAPDOOR;
+	public static Block ACACIA_GLASS_TRAPDOOR;
+	public static Block JUNGLE_GLASS_TRAPDOOR;
+	public static Block DARK_OAK_GLASS_TRAPDOOR;
+	public static Block CRIMSON_GLASS_TRAPDOOR;
+	public static Block WARPED_GLASS_TRAPDOOR;
+	public static Block IRON_GLASS_TRAPDOOR;
 
-	public static Block registerDoor(String material, MaterialCategory materialCategory, Block parentDoorType) {
+	public static void register() {
+		// Glass doors
+		OAK_GLASS_DOOR = registerDoor("oak", MaterialCategory.WOOD, Blocks.OAK_DOOR);
+		SPRUCE_GLASS_DOOR = registerDoor("spruce", MaterialCategory.WOOD, Blocks.SPRUCE_DOOR);
+		BIRCH_GLASS_DOOR = registerDoor("birch", MaterialCategory.WOOD, Blocks.BIRCH_DOOR);
+		ACACIA_GLASS_DOOR = registerDoor("acacia", MaterialCategory.WOOD, Blocks.ACACIA_DOOR);
+		JUNGLE_GLASS_DOOR = registerDoor("jungle", MaterialCategory.WOOD, Blocks.JUNGLE_DOOR);
+		DARK_OAK_GLASS_DOOR = registerDoor("dark_oak", MaterialCategory.WOOD, Blocks.DARK_OAK_DOOR);
+		CRIMSON_GLASS_DOOR = registerDoor("crimson", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.CRIMSON_DOOR);
+		WARPED_GLASS_DOOR = registerDoor("warped", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.WARPED_DOOR);
+		IRON_GLASS_DOOR = registerDoor("iron", MaterialCategory.METAL, Blocks.IRON_DOOR);
+
+		// Glass trapdoors
+		OAK_GLASS_TRAPDOOR = registerTrapdoor("oak", MaterialCategory.WOOD, Blocks.OAK_TRAPDOOR);
+		SPRUCE_GLASS_TRAPDOOR = registerTrapdoor("spruce", MaterialCategory.WOOD, Blocks.SPRUCE_TRAPDOOR);
+		BIRCH_GLASS_TRAPDOOR = registerTrapdoor("birch", MaterialCategory.WOOD, Blocks.BIRCH_TRAPDOOR);
+		ACACIA_GLASS_TRAPDOOR = registerTrapdoor("acacia", MaterialCategory.WOOD, Blocks.ACACIA_TRAPDOOR);
+		JUNGLE_GLASS_TRAPDOOR = registerTrapdoor("jungle", MaterialCategory.WOOD, Blocks.JUNGLE_TRAPDOOR);
+		DARK_OAK_GLASS_TRAPDOOR = registerTrapdoor("dark_oak", MaterialCategory.WOOD, Blocks.DARK_OAK_TRAPDOOR);
+		CRIMSON_GLASS_TRAPDOOR = registerTrapdoor("crimson", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.CRIMSON_TRAPDOOR);
+		WARPED_GLASS_TRAPDOOR = registerTrapdoor("warped", MaterialCategory.NON_FLAMMABLE_WOOD, Blocks.WARPED_TRAPDOOR);
+		IRON_GLASS_TRAPDOOR = registerTrapdoor("iron", MaterialCategory.METAL, Blocks.IRON_TRAPDOOR);
+	}
+
+	private static Block registerDoor(String material, MaterialCategory materialCategory, Block parentDoorType) {
 		assert parentDoorType instanceof DoorBlock;
 
 		GlassDoorBlock door = new GlassDoorBlock(materialCategory, parentDoorType);
@@ -54,7 +78,7 @@ public class ModernGlassDoorsBlocks {
 		return door;
 	}
 
-	public static Block registerTrapdoor(String material, MaterialCategory materialCategory, Block parentTrapdoorType) {
+	private static Block registerTrapdoor(String material, MaterialCategory materialCategory, Block parentTrapdoorType) {
 		assert parentTrapdoorType instanceof TrapdoorBlock;
 
 		GlassTrapdoorBlock trapdoor = new GlassTrapdoorBlock(materialCategory, parentTrapdoorType);

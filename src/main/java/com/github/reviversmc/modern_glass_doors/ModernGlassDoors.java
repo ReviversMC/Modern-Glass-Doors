@@ -19,5 +19,6 @@ public class ModernGlassDoors implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModernGlassDoorsBlocks.register();
 	}
 }

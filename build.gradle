@@ -1,44 +1,43 @@
 plugins {
 	id 'fabric-loom'
 	id 'io.github.juuxel.loom-quiltflower'
-	id "checkstyle"
+	id 'checkstyle'
 }
 
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
-
-archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+base {
+	archivesName = project.archives_base_name
+}
+
 
 checkstyle {
-	configFile = project.file("checkstyle.xml")
+	configFile = project.file('checkstyle.xml')
 	toolVersion = project.checkstyle_version
 }
 
 
 repositories {
-	if (project.use_third_party_mods == "true") {
+	if (project.use_third_party_mods == 'true') {
 		maven {
-			name = "Modrinth"
-			url = "https://api.modrinth.com/maven"
+			name = 'Modrinth'
+			url = 'https://api.modrinth.com/maven'
 			content {
-				includeGroup "maven.modrinth"
+				includeGroup 'maven.modrinth'
 			}
 		}
 		maven {
-			url = "https://cursemaven.com"
+			url = 'https://cursemaven.com'
 			content {
-				includeGroup "curse.maven"
+				includeGroup 'curse.maven'
 			}
 		}
 	}
 	maven {
-		name = "TerraformersMC"
-		url = "https://maven.terraformersmc.com/releases"
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/releases'
 	}
 	mavenCentral()
 }
@@ -50,30 +49,27 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
 
 	// Required Fabric API modules
-	modImplementation(fabricApi.module("fabric-api-base", project.fabric_api_version))
-	modImplementation(fabricApi.module("fabric-item-group-api-v1", project.fabric_api_version))
-	modImplementation(fabricApi.module("fabric-blockrenderlayer-v1", project.fabric_api_version))
-	modImplementation(fabricApi.module("fabric-data-generation-api-v1", project.fabric_api_version))
+	modImplementation(fabricApi.module('fabric-api-base', project.fabric_api_version))
+	modImplementation(fabricApi.module('fabric-item-group-api-v1', project.fabric_api_version))
+	modImplementation(fabricApi.module('fabric-blockrenderlayer-v1', project.fabric_api_version))
+	modImplementation(fabricApi.module('fabric-data-generation-api-v1', project.fabric_api_version))
 
 
-	if (project.use_third_party_mods == "true") {
+	if (project.use_third_party_mods == 'true') {
 		configurations {
 			modRuntimeOnly {
 				transitive = true
-				exclude module: "fabric-loader"
+				exclude module: 'fabric-loader'
 			}
 		}
 
-		// Use the full Fabric API while debugging, because transitive deps aren't always defined correctly
+		// Use full Fabric API bundle while debugging, since transitive deps aren't always declared correctly
 		modRuntimeOnly "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 		modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 		modRuntimeOnly "maven.modrinth:sodium:${project.sodium_version}"
 		modRuntimeOnly "maven.modrinth:lithium:${project.lithium_version}"
-		modRuntimeOnly "maven.modrinth:starlight:${project.starlight_version}"
-		modRuntimeOnly "maven.modrinth:ferrite-core:${project.ferrite_core_version}"
-		modRuntimeOnly "maven.modrinth:smoothboot-fabric:${project.smoothboot_version}"
-		modRuntimeOnly "curse.maven:no-fade-452768:${project.no_fade_version}"
+		modRuntimeOnly "maven.modrinth:ferrite-core:${project.ferritecore_version}"
 	}
 }
 
@@ -85,10 +81,10 @@ loom {
 		datagen {
 			inherit server
 
-			name "Data Generation"
-			runDir "build/datagen"
+			name 'Data Generation'
+			runDir 'build/datagen'
 
-			vmArg "-Dfabric-api.datagen"
+			vmArg '-Dfabric-api.datagen'
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/resources_generated")}"
 		}
 	}
@@ -107,10 +103,14 @@ sourceSets {
 }
 
 processResources {
-	inputs.property "version", project.version
+	inputs.property 'version', project.version
 
-	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+	filesMatching('fabric.mod.json') {
+		expand 'version': project.version
+	}
+
+	from("${rootDir}/assets/icon.png") {
+		into 'assets/modern_glass_doors/'
 	}
 }
 
@@ -119,13 +119,16 @@ tasks.withType(JavaCompile).configureEach {
 	// This fixes some edge cases with special characters not displaying correctly,
 	// see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html.
 	// If Javadoc is generated, this must be specified in that task too.
-	it.options.encoding = "UTF-8"
+	it.options.encoding = 'UTF-8'
 
 	// Minecraft 1.18-pre2 upwards uses Java 17.
 	it.options.release = 17
 }
 
 java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 	// if it is present. If you remove this line, sources will not be generated.
 	withSourcesJar()
@@ -133,8 +136,4 @@ java {
 	// If this mod is going to be a library, then it should also generate Javadocs in order to aid
 	// with development. Uncomment this line to generate them.
 	// withJavadocJar()
-}
-
-jar {
-	from "LICENSE"
 }

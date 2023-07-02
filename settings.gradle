@@ -12,3 +12,5 @@ pluginManagement {
 		id 'io.github.juuxel.loom-quiltflower' version "${loom_quiltflower_version}"
 	}
 }
+
+rootProject.name = 'modern-glass-doors'

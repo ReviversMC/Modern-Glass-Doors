@@ -40,6 +40,11 @@ jobs:
       - name: Publish mod
         uses: Kir-Antipov/mc-publish@v3.2
         with:
+          modrinth-id: zGSQY8dZ
+          modrinth-featured: true
+          modrinth-unfeature-mode: intersection
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
           curseforge-id: 326641
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
 

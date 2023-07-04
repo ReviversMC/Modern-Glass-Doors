@@ -47,8 +47,8 @@ jobs:
 
           files: build/libs/!(*-@(dev|sources)).jar
 
-          name: Release 5.1.0 for Minecraft 1.20 and later
-          version: 5.1.0+1.20-and-later
+          name: Release 5.1.1 for Minecraft 1.20 and later
+          version: 5.1.1+1.20-and-later
           version-type: release
 
           loaders: |

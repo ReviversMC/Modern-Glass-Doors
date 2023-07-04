@@ -48,8 +48,8 @@ jobs:
           files-primary: build/libs/!(*-@(dev|sources)).jar
           files-secondary: null
 
-          name: Release 4.2.0 for Minecraft 1.19.4
-          version: 4.2.0+1.19.4
+          name: Release 4.2.1 for Minecraft 1.19.4
+          version: 4.2.1+1.19.4
           version-type: release
 
           loaders: |

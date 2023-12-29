@@ -5,6 +5,7 @@ import java.util.function.Consumer;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
@@ -20,7 +21,7 @@ public class ModernGlassDoorsRecipeProvider extends FabricRecipeProvider {
 	}
 
 	@Override
-	public void generate(Consumer<RecipeJsonProvider> exporter) {
+	public void generate(RecipeExporter exporter) {
 		for (GlassDoorBlock door : ModernGlassDoorsBlocks.GLASS_DOORS) {
 			createGlassDoorRecipe(exporter, door, door.getParentDoorType());
 			createDoorFromGlassDoorRecipe(exporter, door.getParentDoorType(), door);
@@ -32,7 +33,7 @@ public class ModernGlassDoorsRecipeProvider extends FabricRecipeProvider {
 		}
 	}
 
-	private static void createGlassDoorRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+	private static void createGlassDoorRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
 		ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, output)
 				.input(input)
 				.input(Blocks.GLASS_PANE)
@@ -41,7 +42,7 @@ public class ModernGlassDoorsRecipeProvider extends FabricRecipeProvider {
 				.offerTo(exporter);
 	}
 
-	private static void createDoorFromGlassDoorRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+	private static void createDoorFromGlassDoorRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
 		ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, output)
 				.input(input)
 				.criterion(hasItem(input), conditionsFromItem(input))

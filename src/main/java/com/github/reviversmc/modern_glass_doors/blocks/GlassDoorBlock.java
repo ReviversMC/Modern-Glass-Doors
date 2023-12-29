@@ -26,7 +26,7 @@ public class GlassDoorBlock extends DoorBlock {
 	public final DoorBlock parentDoorType;
 
 	GlassDoorBlock(MaterialCategory materialCategory, DoorBlock parentDoorType) {
-		super(Block.Settings.copy(parentDoorType), parentDoorType.blockSetType);
+		super(parentDoorType.blockSetType, Block.Settings.copy(parentDoorType));
 
 		this.materialCategory = materialCategory;
 		this.parentDoorType = (DoorBlock) parentDoorType;

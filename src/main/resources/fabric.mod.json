@@ -41,7 +41,7 @@
 		]
 	},
 	"depends": {
-		"minecraft": ">=1.20-pre.2",
+		"minecraft": ">=1.20.3",
 		"fabric-item-group-api-v1": "*",
 		"fabric-blockrenderlayer-v1": "*"
 	}

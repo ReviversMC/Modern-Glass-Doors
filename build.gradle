@@ -71,7 +71,8 @@ dependencies {
 		modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version}"
 		modRuntimeOnly "maven.modrinth:sodium:${project.sodium_version}"
 		modRuntimeOnly "maven.modrinth:lithium:${project.lithium_version}"
-		modRuntimeOnly "maven.modrinth:ferrite-core:${project.ferritecore_version}"
+		// not available for MC 1.20.3
+		// modRuntimeOnly "maven.modrinth:ferrite-core:${project.ferritecore_version}"
 	}
 }
 

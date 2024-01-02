@@ -52,8 +52,8 @@ jobs:
 
           files: build/libs/!(*-@(dev|sources)).jar
 
-          name: Release 5.1.2 for Minecraft 1.20 and later
-          version: 5.1.2+1.20-and-later
+          name: Release 5.2.0 for Minecraft 1.20.2
+          version: 5.2.0+1.20.2
           version-type: release
 
           loaders: |
@@ -63,7 +63,7 @@ jobs:
             fabric-api@*(required){modrinth:P7dR8mSH}{curseforge:306612}#(ignore:github)
 
           game-versions: |
-            [1.20-rc1,1.20.1]
+            [1.20.2]
 
           game-version-filter: none
 

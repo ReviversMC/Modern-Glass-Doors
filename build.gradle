@@ -1,6 +1,5 @@
 plugins {
 	id 'fabric-loom'
-	id 'io.github.juuxel.loom-quiltflower'
 	id 'checkstyle'
 }
 
@@ -53,6 +52,9 @@ dependencies {
 	modImplementation(fabricApi.module('fabric-item-group-api-v1', project.fabric_api_version))
 	modImplementation(fabricApi.module('fabric-blockrenderlayer-v1', project.fabric_api_version))
 	modImplementation(fabricApi.module('fabric-data-generation-api-v1', project.fabric_api_version))
+
+	// Vineflower
+	vineflowerDecompilerClasspath "org.vineflower:vineflower:1.9.3"
 
 
 	if (project.use_third_party_mods == 'true') {

@@ -63,7 +63,7 @@ jobs:
             fabric-api@*(required){modrinth:P7dR8mSH}{curseforge:306612}#(ignore:github)
 
           game-versions: |
-            [1.20.2]
+            1.20.2
 
           game-version-filter: none
 
